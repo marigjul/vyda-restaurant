@@ -1,0 +1,86 @@
+.content {
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+}
+#overskrift {
+    letter-spacing: 4px;
+}
+.info-text {
+    display: block;
+    height: 250px;
+    width: 600px;
+    margin: auto;
+    padding: 60px;
+    background-color: #e6e2dd;
+    text-align: center;
+    font-size: 110%;
+    line-height: 2;
+}
+
+.info-flexbox {
+    border: #e6e2dd solid 2px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.boksene {
+    border: solid black 1px;
+    display: inline-block;
+    height: 300px;
+    flex: 1;
+    padding: 3px;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #fffefe;
+    letter-spacing: 0.5px;
+    
+}
+
+.img {
+    height: 50px;
+}
+.img > img {
+    height: 100%;
+}
+
+
+/* Linkknappen til Foodora */
+.lenkeknapp-foodora { 
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #73716e; /* Bakgrunnsfarge for knappen */
+    color: #fff; /* Tekstfarge */
+    text-decoration: none; /* Fjern understreking fra lenken */
+    border: 2px solid #bfbcb8; /* Kantdetaljer */
+    border-radius: 2px; /* Runde hjørner */
+    transition: background-color 0.15s;
+  }
+
+/* Endre stilen når foodora-knappen er i hover-tilstand */
+.lenkeknapp-foodora:hover {
+    background-color: #D60265; /* Endre bakgrunnsfargen på hover */
+    border: 2px solid #ae0c58; /* Endre kantdetaljer på hover */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* skyggelegging på hover */
+}
+
+/* Linkknappen til wolt */
+.lenkeknapp-wolt { 
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #73716e; /* Bakgrunnsfarge for knappen */
+    color: #fff; /* Tekstfarge */
+    text-decoration: none; /* Fjern understreking fra lenken */
+    border: 2px solid #bfbcb8; /* Kantdetaljer */
+    border-radius: 2px; /* Runde hjørner */
+    transition: background-color 0.15s;
+  }
+
+/* Endre stilen når wolt-knappen er i hover-tilstand */
+.lenkeknapp-wolt:hover {
+    background-color: #00C1E8; /* Endre bakgrunnsfargen på hover */
+    border: 2px solid #00B6DB; /* Endre kantdetaljer på hover */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* skyggelegging på hover */
+}
+

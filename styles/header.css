@@ -1,0 +1,36 @@
+
+* {
+    font-family: roboto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: roboto;
+}
+
+.navbuttons {
+    display: flex;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    font-weight: 700;
+}
+.topnav {
+    text-align: center;
+}
+.button {
+    background-color: black;
+    flex: 1;
+    font-size: 24px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 8px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.button:hover {
+    color: #e59a00;
+}

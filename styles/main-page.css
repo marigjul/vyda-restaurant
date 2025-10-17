@@ -1,0 +1,88 @@
+/* Main page styling */
+
+/* Styling for the main content container of the main page */
+#content-main-page {
+    background-image: url(../img/vietnam.jpeg);
+    background-size: cover;
+    animation: fade-2-new 20s infinite; /* Animation to cycle through  them background images */
+    background-position: center;
+    height: 110vh; 
+    position: relative;
+    padding-top: 250px; /* Top padding for slogan and button */
+
+}
+
+/* Keyframe animation for fading between background images */
+@keyframes fade-2-new {
+    0% {
+        background-image: url(../img/vietnam.jpeg);
+    }
+    25% {
+        background-image: url(../img/booking.jpeg);
+    }
+    50% {
+        background-image: url(../img/takeawaybilde.jpeg);
+    }
+    75% {
+        background-image: url(../img/display_food.jpg);
+    }
+    100% {
+        background-image: url(../img/vietnam.jpeg);
+    }
+}
+
+/* Overlay shadow on the main page */
+#shadow-main-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    pointer-events: none; /* Allows interactions with the button */
+}
+
+/* Styling for the slogan on the main page */
+#slogan-main-page {
+    position: relative;
+    z-index: 1; /* Places it above the overlay */
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+
+/* Styling for the heading within the slogan */
+#slogan-main-page h1 {
+    position: relative;
+    margin: 0;
+    color: white;
+    border: white solid 5px;
+    border-radius: 2px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+/* Styling for the button placement on the main page */
+#buttonplacement-main-page {
+    margin-top: 50px;
+    width: 250px;
+    height: 100px;
+    border: white solid 5px;
+    border-radius: 2px;
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Styling for the paragraph within the button placement */
+#buttonplacement-main-page > p {
+    margin-top: 25px;
+}
+
+/* Styling for the link to the menu on the main page */
+#meny-link-main-page {
+    text-decoration: none;
+    color: white;
+}

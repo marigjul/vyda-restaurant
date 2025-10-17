@@ -1,0 +1,102 @@
+/* Semi-transparent overlay */
+#overlay-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* Aligning the content */
+#content-menu {
+  position: relative;
+  background-image: url(../img/booking.jpeg);
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-bottom: 35px;
+  z-index: 100;
+}
+
+.subheader-menu {
+  margin: 0;
+}
+
+
+h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
+.menu  p {
+  font-family: arial;
+  color: black;
+}
+
+/* Grid layout */
+.menu {
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 25px;
+  column-gap: 40px;
+}
+/* Layout for the content inside each menu item */
+.menu-item-grid {
+  align-items: center;
+  height: 170px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  background-color: white;
+  border-radius: 2px;
+  border: solid #e59a00 5px;
+}
+
+
+.dish-info {
+  padding: 15px;
+  border-right: solid 1px rgb(58, 58, 58);
+}
+
+.dish-name {
+  margin-bottom: 0;
+  font-weight: 700;
+  border-bottom: solid 1px rgb(58, 58, 58);
+  padding-bottom: 5px;
+}
+
+.dish-ingredients {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  border-bottom: solid 1px rgb(58, 58, 58);
+  padding-bottom: 5px;
+}
+
+.dish-allergens {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.dish-price {
+  padding: 15px;
+  padding-left: 10px;
+}
+
+/* Changes the menu layout to a single-column grid when the page shrinks */
+@media (max-width: 700px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+}

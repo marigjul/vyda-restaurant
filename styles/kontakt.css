@@ -1,0 +1,54 @@
+
+
+.content {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.b1 {
+    flex: 1;
+    text-align: center;
+    line-height: 3rem;
+    margin: 70px;
+    border: #0a0a09 solid 2px;
+    background-color: #e6e2dd;
+    
+}
+
+.b2 {
+    background-color: white;
+    flex: 1;
+    text-align: center;
+    line-height: 3rem;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+.map-pin {
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+#pin {
+    flex: 1;
+    display: inline-block;
+}
+
+#address {
+    flex: 1;
+    display: inline-block;
+}
+
+@media (max-width:1000px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+
+
+
+

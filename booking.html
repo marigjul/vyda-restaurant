@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/booking.css">
+    <title>Booking</title>
+</head>
+
+<body>
+<div id="header"></div>
+<div id="content">
+
+  <div class="containeren">
+
+    <!-- Åpningstider -->
+    <div class="tid-container">
+      <h2 class="heading">ÅPNINGSTIDER</h2>
+      <hr>
+      <h3 class="heading-days">Mandag-Torsdag:</h3>
+      <p>13:00-22:00</p>
+      <h3 class="heading-days">Fredag-Lørdag:</h3>
+      <p>12:00-23:00</p>
+      <h3 class="heading-days">Søndag:</h3>
+      <p>12:00-22:00</p>
+      <hr>
+      <h4 class ="heading-phone">Tlf: 90909090</h4>
+    </div>
+
+    <!-- Booking -->
+    <div class="booking-container">
+      <form action="action_page.html" id="bookingForm">
+        <h2 class="heading heading-yellow">
+          ONLINE BOOKING
+        </h2>
+
+        <!-- Navn -->
+        <div class="forms">
+          <p>Navn:</p>
+          <input type="text" placeholder="Navn" required>
+        </div>
+
+        <!-- Tlf. nummer -->
+        <div class="forms">
+          <p>Tlf. nummer:</p>
+          <input type="tel" placeholder="Tlf. nummer" required> 
+        </div>
+
+        <!-- Dato -->
+        <div class="forms">
+          <p>Dato:</p>
+          <input type="date" id="daySelect" required>
+        </div>
+
+        <!-- Tidspunkt -->
+        <div class="forms">
+          <p>Tidspunkt:</p>
+          <select name="tidspunkt" id="timeSelect" required>
+            <option value="" disabled selected hidden>Velg tidspunkt</option>
+            <option value="12:00">12:00</option>
+            <option value="12:30">12:30</option>
+            <option value="13:00">13:00</option>
+            <option value="13:30">13:30</option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+            <option value="19:30">19:30</option>
+            <option value="20:00">20:00</option>
+            <option value="20:30">20:30</option>
+            <option value="21:00">21:00</option>
+          </select>
+        </div>
+
+        <!-- Antall personer -->
+        <div class="forms">
+          <p>Antall personer:</p>
+          <select name="antall_personer" id="personer" required>
+            <option value="" disabled selected hidden>Velg antall</option>
+            <option value="1">1 person</option>
+            <option value="2">2 personer</option>
+            <option value="3">3 personer</option>
+            <option value="4">4 personer</option>
+            <option value="5">5 personer</option>
+            <option value="6">6 personer</option>
+            <option value="7">7 personer</option>
+            <option value="8">8 personer</option>
+          </select>
+        </div>
+            
+        <!-- Submit knapp -->
+        <input type="submit" onsubmit="confirmation()" value="Bestill" id="submit">
+      </form>
+    </div>
+  </div>   
+</div>
+
+<div id="footer"></div>
+  <script src="scripts/orderconfirmation.js"></script>
+  <script src="scripts/layout.js"></script>
+  <script src="scripts/dateRestriction.js"></script>
+</body>
+</html>

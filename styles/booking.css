@@ -1,0 +1,115 @@
+/* Inspired by the design from brilex 007, url: https://www.youtube.com/watch?app=desktop&v=ShpH_1EPox0&ab_channel=brilex007 */
+
+#content {
+  background-image: url(../img/booking.jpeg);
+  height: 120vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed #000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.containeren {
+  box-shadow: 0px 0px 0px 0.1px;
+  margin: 200px;
+  display: grid;
+  grid-template-columns: 50% 60%;
+  padding-right: 50px;
+}
+
+.tid-container {
+  background-color: #e59a00;
+  padding: 50px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 35px;
+  margin: 10px;
+  text-align: center;
+}
+
+.heading-days {
+  color: black;
+  font-size: 30px;
+}
+
+.booking-container {
+  background-color: white;
+  padding: 50px;
+  margin: 0;
+  color: black;
+}
+
+form {
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-between;
+}
+
+#submit {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+#submit:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+
+}
+
+#submit:active {
+  color: black;
+  background-color: #e59a00;
+}
+
+/* action_page styles */
+
+#innhold {
+  display: block;
+  height: 200px;
+  width: 600px;
+  margin: auto;
+  padding: 60px;
+  background-color: #e6e2dd;
+  text-align: center;
+  font-size: 110%;
+  line-height: 2;
+  border: #e59a00 10px;
+  border-style: inset;
+}
+
+#bestilling_mottatt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: black;
+  padding: 20px;
+}
+
+#undertekst {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: black;
+}
